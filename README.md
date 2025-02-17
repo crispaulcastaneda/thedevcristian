@@ -33,6 +33,8 @@ As part of my clean-up process, I am implementing:
 
 If you have any feedback, or opportunities, or just want to connect, feel free to reach out:
 
-🌐 Website: [https://thedevcristian.com]
-📧 Email: [cristianpaul.castaneda@yahoo.com]
+🌐 Website: [thedevcristian](https://thedevcristian.com)
+
+📧 Email: [cristianpaul.castaneda@yahoo.com](cristianpaul.castaneda@yahoo.com)
+
 💼 LinkedIn: [LinkedIn](https://www.linkedin.com/in/crispaulcastaneda/)
