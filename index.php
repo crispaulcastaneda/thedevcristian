@@ -1,7 +1,16 @@
-<?php include "includes/head.php"; ?>
+<?php include 'include/head.php' ?>
 
-<?php include "pages/header.php" ?>
+<header>
+  <?php include 'include/header.php' ?>
+</header>
+
 <main>
-  <?php include "pages/main.php" ?>
+  <?php include 'temp/about.php' ?>
+  <?php include 'temp/project.php' ?>
+  <?php include 'temp/blog.php' ?>
+  <?php include 'temp/contact.php' ?>
 </main>
-<?php include "includes/footer.php"; ?>
+
+<footer>
+  <?php include 'include/footer.php' ?>
+</footer>
