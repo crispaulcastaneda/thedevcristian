@@ -1,2 +1,0 @@
-<h1>CONTACT</h1>
-<p>CONTACT</p>

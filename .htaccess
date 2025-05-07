@@ -1,0 +1,23 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Add .php extension to URLs without extensions
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Check if the requested URL with .php exists
+# If not, redirect to 404 page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php !-f
+RewriteRule ^(.*)$ /error.php [L]
+
+# Custom error document
+ErrorDocument 404 /error.php
+
+# Optional: Force lowercase URLs
+# Uncomment if needed
+# RewriteMap lc int:tolower
+# RewriteCond %{REQUEST_URI} [A-Z]
+# RewriteRule . ${lc:%{REQUEST_URI}} [R=301,L]

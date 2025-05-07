@@ -4,13 +4,11 @@
   <?php include 'include/header.php' ?>
 </header>
 
-<main>
+<main id="tdc--main">
   <?php include 'temp/about.php' ?>
+  <?php include 'temp/writing.php' ?>
   <?php include 'temp/project.php' ?>
-  <?php include 'temp/blog.php' ?>
-  <?php include 'temp/contact.php' ?>
+  <?php include 'temp/code.php' ?>
 </main>
 
-<footer>
-  <?php include 'include/footer.php' ?>
-</footer>
+<?php include 'include/footer.php' ?>
