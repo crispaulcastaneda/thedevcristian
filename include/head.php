@@ -7,6 +7,25 @@ $base_url = $protocol . $domain . '/';
 <html lang="en">
 
 <head>
+    <?php
+        $url = $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'];
+        $config = [ 'thedevcristian.com/index.php' => ['ga_code' => 'G-8VF13D6VR2' ],
+  ];
+  ?>
+  
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $config[$url]['ga_code']; ?>"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', '<?php echo $config[$url]['ga_code']; ?>');
+      </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=7">
