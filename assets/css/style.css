@@ -1,6 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap");
 /* CSS Document */
 /* Global Styles */
 :root {
@@ -15,9 +22,20 @@
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+::-moz-selection {
+  color: var(--bg-accent);
+  background-color: var(--text-color);
+}
+
+::selection {
+  color: var(--bg-accent);
+  background-color: var(--text-color);
 }
 
 html {
@@ -25,8 +43,8 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  font-family: "Open Sans", sans-serif;
+  background-color: var(--base-black);
+  font-family: "DM Sans", sans-serif;
   color: var(--text-color);
 }
 
@@ -34,6 +52,8 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: var(--bg-accent);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -43,7 +63,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   color: var(--text-color);
   margin: 0;
@@ -51,10 +71,22 @@ h6 {
 
 li {
   line-height: 26px;
+  list-style: none;
+}
+
+li::before {
+  content: "•";
+  color: var(--text-color);
+  font-weight: 700;
+  display: inline-block;
+  width: 16px;
+  margin-left: -16px;
 }
 
 body.fade--out {
   opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -89,6 +121,10 @@ body.fade--out {
   width: 100%;
   font-weight: 500;
   line-height: normal;
+
+  -webkit-transition: all 400ms;
+
+  -o-transition: all 400ms;
 
   transition: all 400ms;
   top: 0;
@@ -141,6 +177,60 @@ body.fade--out {
   padding: 12px 24px;
 }
 
+/* PROJECT CONTENT */
+.tdc--project__container {
+  width: 100%;
+  overflow: hidden;
+}
+.tdc--project__item {
+  position: relative;
+  max-width: 100%;
+  width: 480px;
+  height: 100%;
+  margin: 0 auto 24px;
+  border-radius: 8px;
+}
+
+.tdc--project__item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.tdc--project__lp__description,
+.tdc--project__ilp__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 14px;
+  background-color: var(--bg-accent);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tdc--project__lp__description .tdc--project__content h2,
+.tdc--project__ilp__description .tdc--project__content h2 {
+  font-size: 16px;
+  line-height: 26px;
+}
+.tdc--project__lp__description .tdc--project__content small,
+.tdc--project__ilp__description .tdc--project__content small {
+  color: var(--hover-color);
+  font-weight: 700;
+}
+.tdc--project__lp__description .tdc--project__link a,
+.tdc--project__ilp__description .tdc--project__link a {
+  font-size: 16px;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
 /* CODE */
 .tdc--codes__section {
   margin-bottom: 32px;
@@ -157,12 +247,21 @@ body.fade--out {
   padding: 18px 16px;
 }
 .tdc--footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 18px;
 }
 .tdc--footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 16px;
 }
@@ -178,6 +277,12 @@ body.fade--out {
   a:hover {
     color: var(--hover-color);
   }
+
+  /* PROJECT DESCRIPTION */
+  .tdc--project__lp__description .tdc--project__link a:hover,
+  .tdc--project__ilp__description .tdc--project__link a:hover {
+    color: var(--hover-color);
+  }
 }
 
 @media (max-width: 1360px) and (min-width: 1024px) {
@@ -188,9 +293,12 @@ body.fade--out {
 @media (max-width: 1023px) {
 }
 @media (max-width: 767px) {
+  .inner {
+    padding: 0 8px;
+  }
 }
 @media (max-width: 375px) {
   body {
-    min-width: 375px;
+    min-width: 250px;
   }
 }

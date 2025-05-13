@@ -8,7 +8,7 @@
           <a href="https://dev.to/thedevcristian">dev.to</a>
         </div>
         <div class="tdc--footer__copy">
-          <p>&copy; 2025 Cristian Paul Castañeda. All rights reserved.</p>
+          <p>&copy; 2025 Cristian Paul Castañeda | thedevcristian. <br /> <br /> All rights reserved.</p>
         </div>
   </section>
 </footer>
