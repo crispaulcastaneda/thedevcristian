@@ -33,3 +33,14 @@
 .code--container pre {
   font-size: 12px;
 }
+
+/* MARKUP */
+.code--markup {
+  color: var(--hover-color);
+  font-size: 12px;
+}
+
+.comment--code {
+  color: var(--bg-accent);
+  font-size: 0.8em;
+}

@@ -4,7 +4,7 @@
       <h3>Code</h3>
 
       <ul>
-        <li><a href="https://github.com/crispaulcastaneda/motion-web-design">Motion Web Design</a></li>
+        <li><a href="https://github.com/crispaulcastaneda/motion-web-design">motion-web-design</a></li>
       </ul>
 
     </article>
