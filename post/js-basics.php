@@ -421,7 +421,7 @@
                 </tr>
                 <tr>
                   <td>delete</td>
-                  <td>Deletes a property from an object (e.g., delete obj.key)/td>
+                  <td>Deletes a property from an object (e.g., delete obj.key)</td>
                 </tr>
                 <tr>
                   <td>?.. : .. (ternary)</td>
