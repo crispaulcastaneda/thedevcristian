@@ -17,6 +17,7 @@
   --text-color-accent: #948979;
   --hover-color: #dfd0b8;
   --base-black: #000000;
+  --error-text: #dc143c;
 }
 
 *,
@@ -67,6 +68,14 @@ h6 {
   font-weight: 400;
   color: var(--text-color);
   margin: 0;
+}
+
+hr {
+  background-color: var(--bg-color);
+  height: 2px;
+  border: 0;
+  width: 70%;
+  margin: 0 auto;
 }
 
 li {
@@ -283,6 +292,7 @@ body.fade--out {
   width: 100%;
   max-width: 100%;
   border-radius: 30px;
+  margin-bottom: 24px;
 }
 .accordion--holder__content table,
 .accordion--holder__content table th,
@@ -291,6 +301,7 @@ body.fade--out {
   border-collapse: collapse;
   text-align: center;
   padding: 8px 10px;
+  font-size: 12px;
 }
 
 .accordion--holder__content table thead {

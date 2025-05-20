@@ -222,6 +222,227 @@
           </div>
         </div>
 
+        <div class="accordion--holder__item">
+          <h4 class="accordion--holder__title">Vocabulary around Variables & Scope</h4>
+          <div class="accordion--holder__content">
+            <div class="code--container__explanation">
+
+              <p><strong>Scope</strong>
+                <br />The limits where the variable exists.
+              </p>
+
+              <p><strong>Global Scope</strong>
+                <br /> The outer most scope called the Global scope.
+              </p>
+
+              <p><strong>Functional Scope</strong>
+                <br /> Any variables inside a function is in a scope of the function.
+              </p>
+
+              <p><strong>Lexical Environment (Lexical Scope)</strong>
+                <br /> The physical location (scope) where a variable or function is declared is its lexical environment
+                (lexical scope).
+              </p>
+
+              <p><strong>RULE:</strong>
+                <br /> (1) Variables in the outer scope can be accessed in a nested scope; But variables inside a nested
+                scope CANNOT be accessed by the outer scope. (Private variables) <br />
+
+                (2) Variables are picked up from the lexical environment.
+              </p>
+
+              <hr /> <br />
+
+              <p><code class="code--markup">let a;</code> - <strong>Variable Declaration</strong>
+                <br /> Declaring a variable means creating a variable.
+              </p>
+
+              <p><code class="code--markup">a = 12</code> - <strong>Variable Initialization</strong>
+                <br /> An initial value is assigned to the variable.
+              </p>
+
+              <p><code class="code--markup">a = "me"</code> - <strong>Variable Assignment</strong>
+                <br /> Assigning a value to a variable that has already been declared.
+              </p>
+
+              <p><code class="code--markup">console.log(a); var a = "me"</code> - <strong>Hoisting</strong>
+                <br /> Variables are declared at the top of the function automatically, and initialized at the same time
+                they run.
+                <span class="error--text">Uncaught ReferenceError: a is not defined.</span>
+              </p>
+
+              <hr /> <br />
+
+              <div class="code--container__content">
+                <p><strong>Scope Chain</strong> <br />
+                  The nested hierarchy of scope is called the scope chain. The JS Engine looks for a variable in the
+                  scope chain upwards (it is ancestors, until found).
+                </p>
+                <pre>
+                <code>
+    let a = "global";
+
+    function first() {
+      let a = "fresh";
+
+      function second() {
+        console.log(a); <span class="comment--code">// fresh</span>
+      }
+
+      second();
+    }
+
+    first();
+                </code>
+              </pre>
+              </div>
+
+              <ul class="code--container__list">
+                <li>JavaScript uses the scope chain to resolve variables from inner to outer scopes.</li>
+                <li><span class="highlight--text">second()</span> is defined inside <span
+                    class="highlight--text">first()</span>, so it closes over the
+                  variables in <span class="highlight--text">first()</span> scope.</li>
+                <li>When <span class="highlight--text">second()</span> access a, it finds "fresh" in <span
+                    class="highlight--text">first()</span> and stops
+                  searching - it does not access the
+                  global a.</li>
+                <li>Therefore, if <span class="highlight--text">second()</span> is called, it will log "fresh".</li>
+              </ul>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion--holder__item">
+          <h4 class="accordion--holder__title">Operators</h4>
+          <div class="accordion--holder__content">
+            <p>Operators are reserved-words that perform action on values and variables.</p>
+
+            <table>
+              <thead>
+                <th>Arithmetic</th>
+                <th>Assignment</th>
+                <th>Logical</th>
+                <th>Equality</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>..+.. add</td>
+                  <td> ..=.. Assign Value</td>
+                  <td> ..||.. OR </td>
+                  <td>..===.. Equality </td>
+                </tr>
+                <tr>
+                  <td>..-.. Subtraction</td>
+                  <td> ..+=.. Add then Assign</td>
+                  <td> ..&&.. AND </td>
+                  <td> ..==.. Equality with coercion </td>
+                </tr>
+                <tr>
+                  <td>..*.. Multiply</td>
+                  <td> -=.. Subtract then Assign</td>
+                </tr>
+                <tr>
+                  <td>../.. Divide</td>
+                  <td> *=.. Multiply then Assign</td>
+                </tr>
+                <tr>
+                  <td>..%.. remainder</td>
+                </tr>
+                <tr>
+                  <td>..**.. Exponential</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table>
+              <thead>
+                <th>Conversion</th>
+                <th>Relational / Comparison</th>
+                <th>Increment / Decrement</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>+.. Convert to a number</td>
+                  <td> ..>=.. Greater than equal to </td>
+                  <td> ..++ Postfix increment <br /> ..-- Postfix decrement</td>
+                </tr>
+                <tr>
+                  <td>-.. Convert to number then negate it</td>
+                  <td>
+                    .. <=.. Greater than equal to </td>
+                  <td> ++.. Prefix increment <br /> --.. Prefix decrement</td>
+                </tr>
+                <tr>
+                  <td>!.. Convert to boolean then inverse it</td>
+                  <td>.. != .. Not equal after coercion </td>
+                </tr>
+                <tr>
+                  <td>.. !== .. Not equal </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table>
+              <thead>
+                <th>Operator</th>
+                <th>Uses</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>typeof</td>
+                  <td>Returns the type of a variable (e.g., typeof "hello" → "string")</td>
+                </tr>
+                <tr>
+                  <td>instanceof</td>
+                  <td>Checks if an object is an instance of a constructor (e.g., x instanceof Array)</td>
+                </tr>
+                <tr>
+                  <td>()</td>
+                  <td>Grouping operator or used to invoke functions (e.g., sum())</td>
+                </tr>
+                <tr>
+                  <td>... (spread)</td>
+                  <td>Spread (or rest) operator: spreads elements or collects rest args (e.g., [...arr],
+                    function(...args))</td>
+                </tr>
+                <tr>
+                  <td>.</td>
+                  <td>Property access (e.g., obj.name)</td>
+                </tr>
+                <tr>
+                  <td>[]</td>
+                  <td>Bracket notation for property access (e.g., obj["name"])</td>
+                </tr>
+                <tr>
+                  <td>new</td>
+                  <td>Creates an instance of an object (e.g., new Date())</td>
+                </tr>
+                <tr>
+                  <td>delete</td>
+                  <td>Deletes a property from an object (e.g., delete obj.key)/td>
+                </tr>
+                <tr>
+                  <td>?.. : .. (ternary)</td>
+                  <td>Ternary conditional operator (e.g., condition ? value1 : value2)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p><strong>Operators Precedence</strong> <br /> Given Multiple operators are used in an expression, the
+              'Operator Precedence' determines which operators will be executed first. The higher the precedence, the
+              earlier it will get executed. <br />
+              E.G. 8 * 4 + 2 -> The first operator to be executed is * (multiplication) and then + (addition).
+            </p>
+
+            <p><strong>Operators Associativity</strong> <br /> Given Multiple operators have the same
+              precedence,"associativity" determines in which direction the code will be parsed.
+            </p>
+
+          </div>
+        </div>
+
       </div>
 
 

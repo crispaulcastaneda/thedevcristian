@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 
 .tdc--landing-page__section {
@@ -43,4 +50,20 @@
 .comment--code {
   color: var(--bg-accent);
   font-size: 0.8em;
+}
+
+.error--text {
+  color: #dc143c;
+}
+
+.highlight--text {
+  color: var(--hover-color);
+}
+
+.code--container__list {
+  padding-left: 15px;
+}
+
+.code--container__list li {
+  font-size: 14px;
 }
