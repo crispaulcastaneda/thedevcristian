@@ -5,6 +5,7 @@
 
       <ul>
         <li><a href="https://github.com/crispaulcastaneda/motion-web-design">motion-web-design</a></li>
+        <li><a href="https://github.com/crispaulcastaneda/js-crud-development">js-crud-development</a></li>
       </ul>
 
     </article>
