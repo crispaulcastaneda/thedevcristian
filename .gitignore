@@ -1,0 +1,18 @@
+# IDE's project files
+.vscode
+
+# MacOS system files
+.DS_Store
+
+# Node.js dependencies
+node_modules
+# Build output
+dist
+# Logs
+npm-debug.log*
+# Environment variables files
+.env
+# Coverage reports
+coverage
+# Temporary files
+tmp
