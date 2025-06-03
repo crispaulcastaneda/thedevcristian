@@ -316,16 +316,6 @@ body.fade--out {
   margin-bottom: 24px;
 }
 
-.code--container__content code {
-  display: block;
-  background-color: var(--bg-color);
-  color: var(--text-color-accent);
-  padding: 14px 12px;
-  border-radius: 8px;
-  max-width: 100%;
-  width: 100%;
-}
-
 /* FOOTER */
 .tdc--footer__container {
   padding: 18px 16px;

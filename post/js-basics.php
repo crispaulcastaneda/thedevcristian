@@ -40,7 +40,7 @@
                 </tr>
                 <tr>
                   <td>Boolean</td>
-                  <td><code class="code--markup">true or false</code></td>
+                  <td><code class="language-bash">true or false</code></td>
                 </tr>
                 <tr>
                   <td>Null</td>
@@ -48,23 +48,23 @@
                 </tr>
                 <tr>
                   <td>undefined</td>
-                  <td><code class="code--markup">undefined</code></td>
+                  <td><code class="language-bash">undefined</code></td>
                 </tr>
                 <tr>
                   <td>Symbol</td>
-                  <td><code class="code--markup">Symbol('something')</code></td>
+                  <td><code class="language-bash">Symbol('something')</code></td>
                 </tr>
                 <tr>
                   <td>Object</td>
-                  <td><code class="code--markup">{ key: 'value' }</code></td>
+                  <td><code class="language-bash">{ key: 'value' }</code></td>
                 </tr>
                 <tr>
                   <td>Array</td>
-                  <td><code class="code--markup">[1, "text", false]</code></td>
+                  <td><code class="language-bash">[1, "text", false]</code></td>
                 </tr>
                 <tr>
                   <td>Function</td>
-                  <td><code class="code--markup">function functionName(){ }</code></td>
+                  <td><code class="language-bash">function functionName(){ }</code></td>
                 </tr>
               </tbody>
             </table>
@@ -78,30 +78,30 @@
           <div class="accordion--holder__content">
 
             <div class="code--container__content">
-              <code>
+              <code class="language-bash">
                 let foo = 7 + "2";
               </code>
             </div>
 
             <div class="code--container__explanation">
-              <p><code class="code--markup">var, let, const</code> - <strong>Keyword / Reserved word</strong> <br /> Any
+              <p><code class="language-bash">var, let, const</code> - <strong>Keyword / Reserved word</strong> <br /> Any
                 word that
                 is part of the vocabulary of the programming language is called a keyword.
               </p>
 
-              <p><code class="code--markup">foo</code> - <strong>Variable</strong> <br /> A named reference to a value
+              <p><code class="language-bash">foo</code> - <strong>Variable</strong> <br /> A named reference to a value
                 is a variable.</p>
 
-              <p><code class="code--markup"> = + - * in === typeof != </code> - <strong>Operator</strong> <br />
+              <p><code class="language-bash"> = + - * in === typeof != </code> - <strong>Operator</strong> <br />
                 Operators
                 are
                 reserved-words
                 that perform action on values and variables Example: </p>
 
-              <p><code class="code--markup"> 7, "2" </code> - <strong>Expressions</strong> <br /> A reference, value or
+              <p><code class="language-bash"> 7, "2" </code> - <strong>Expressions</strong> <br /> A reference, value or
                 a group of reference(s) and value(s) combined with operator(s) which result in a single value.</p>
 
-              <p><code class="code--markup"> let foo = 7 + "2"; </code> - <strong>Statement</strong> <br /> A group of
+              <p><code class="language-bash"> let foo = 7 + "2"; </code> - <strong>Statement</strong> <br /> A group of
                 words, numbers and operators that do a task is a statement.</p>
 
             </div>
@@ -114,7 +114,7 @@
             <p>An Object is a data type in JavaScript that is used to store a combination of data in a simple key-value
               pair.</p>
 
-            <div class="code--container__content">
+            <div class="language-bash">
               <pre>
                 <code>
     let user = {
@@ -138,14 +138,14 @@
 
             <div class="code--container__explanation">
 
-              <p><code class="code--markup">name, age, gender, isMarried ...</code> - <strong>Key</strong> <br /> These
+              <p><code class="language-bash">name, age, gender, isMarried ...</code> - <strong>Key</strong> <br /> These
                 are the keys in user in Object.</p>
 
-              <p><code class="code--markup">"John Doe", 22, male, false ...</code> - <strong>Value</strong> <br />
+              <p><code class="language-bash">"John Doe", 22, male, false ...</code> - <strong>Value</strong> <br />
                 These
                 are the values of the respective keys in user object.</p>
 
-              <p><code class="code--markup">function() {}</code> - <strong>Method</strong> <br />
+              <p><code class="language-bash">function() {}</code> - <strong>Method</strong> <br />
                 If a key has a function as a value, it's called a method.
               </p>
 
@@ -166,7 +166,7 @@
 
             <div class="code--container__content">
               <pre>
-                <code>
+                <code class="language-bash">
     <span class="comment--code">// Function Declaration / Function Statement</span>
     function someName(param1, param2) {
 
@@ -183,21 +183,21 @@
 
             <div class="code--container__explanation">
 
-              <p><code class="code--markup">someName</code> - <strong>Name of Function</strong>
+              <p><code class="language-bash">someName</code> - <strong>Name of Function</strong>
                 <br /> A function should be descriptive of what it does.
               </p>
 
-              <p><code class="code--markup">param1, param2</code> - <strong>Parameters / Arguments </strong> <br />
+              <p><code class="language-bash">param1, param2</code> - <strong>Parameters / Arguments </strong> <br />
                 A function can optionally take parameters (arguments). The function can then use this information within
                 the code.
               </p>
 
-              <p><code class="code--markup">return</code> - <strong>Return</strong> <br />
+              <p><code class="language-bash">return</code> - <strong>Return</strong> <br />
                 A function can optionally spit-out or "return" a value once its invoked. Once a function returns, no
                 further lines of code within the function run.
               </p>
 
-              <p><code class="code--markup">function someName(param1, param2) { ... }</code> - <strong>Code
+              <p><code class="language-bash">function someName(param1, param2) { ... }</code> - <strong>Code
                   Block</strong>
                 <br />
                 Any code within the curly braces {...} is called a "block of code", "code block" or simply "block". This
@@ -205,14 +205,14 @@
                 blocks as well.
               </p>
 
-              <p><code class="code--markup">someName("Me", "You")</code> - <strong>Invoke a function</strong>
+              <p><code class="language-bash">someName("Me", "You")</code> - <strong>Invoke a function</strong>
                 <br />
                 Invoking, calling or running a function all mean the same thing. When we write the function name, in the
                 case someName, followed by the brackets symbol () like this someName(), the code inside the function
                 gets executed.
               </p>
 
-              <p><code class="code--markup">("Me", "You")</code> - <strong>Passing Parameters to a function</strong>
+              <p><code class="language-bash">("Me", "You")</code> - <strong>Passing Parameters to a function</strong>
                 <br />
                 When we invoke a function, we can pass in values to the function. These values are called parameters or
               </p>
@@ -253,27 +253,27 @@
 
               <hr /> <br />
 
-              <p><code class="code--markup">let a;</code> - <strong>Variable Declaration</strong>
+              <p><code class="language-bash">let a;</code> - <strong>Variable Declaration</strong>
                 <br /> Declaring a variable means creating a variable.
               </p>
 
-              <p><code class="code--markup">a = 12</code> - <strong>Variable Initialization</strong>
+              <p><code class="language-bash">a = 12</code> - <strong>Variable Initialization</strong>
                 <br /> An initial value is assigned to the variable.
               </p>
 
-              <p><code class="code--markup">a = "me"</code> - <strong>Variable Assignment</strong>
+              <p><code class="language-bash">a = "me"</code> - <strong>Variable Assignment</strong>
                 <br /> Assigning a value to a variable that has already been declared.
               </p>
 
-              <p><code class="code--markup">console.log(a); var a = "me"</code> - <strong>Hoisting</strong>
+              <p><code class="language-bash">console.log(a); var a = "me"</code> - <strong>Hoisting</strong>
                 <br /> Variables are declared at the top of the function automatically, and initialized at the same time
                 they run.
-                <span class="error--text">Uncaught ReferenceError: a is not defined.</span>
+                <code class="language-bash">Uncaught ReferenceError: a is not defined.</code>
               </p>
 
               <hr /> <br />
 
-              <div class="code--container__content">
+              <div class="language-bash">
                 <p><strong>Scope Chain</strong> <br />
                   The nested hierarchy of scope is called the scope chain. The JS Engine looks for a variable in the
                   scope chain upwards (it is ancestors, until found).
@@ -299,14 +299,12 @@
 
               <ul class="code--container__list">
                 <li>JavaScript uses the scope chain to resolve variables from inner to outer scopes.</li>
-                <li><span class="highlight--text">second()</span> is defined inside <span
-                    class="highlight--text">first()</span>, so it closes over the
-                  variables in <span class="highlight--text">first()</span> scope.</li>
-                <li>When <span class="highlight--text">second()</span> access a, it finds "fresh" in <span
-                    class="highlight--text">first()</span> and stops
+                <li><code class="language-bash">second()</code> is defined inside <code class="language-bash">first()</code>, so ist closes over the
+                  variables in <code class="language-bash">first()</code> scope.</li>
+                <li>When <code class="language-bash">second()</code> access a, it finds "fresh" in <code class="language-bash">first()</code> and stops
                   searching - it does not access the
                   global a.</li>
-                <li>Therefore, if <span class="highlight--text">second()</span> is called, it will log "fresh".</li>
+                <li>Therefore, if <code class="language-bash">second()</code> is called, it will log "fresh".</li>
               </ul>
 
 
@@ -328,30 +326,30 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>..+.. add</td>
-                  <td> ..=.. Assign Value</td>
-                  <td> ..||.. OR </td>
-                  <td>..===.. Equality </td>
+                  <td><code class="language-bash"> + add</code></td>
+                  <td><code class="language-bash"> = Assign Value </code></td>
+                  <td> <code class="language-bash"> || OR </code> </td>
+                  <td><code class="language-bash"> === Equality </code> </td>
                 </tr>
                 <tr>
-                  <td>..-.. Subtraction</td>
-                  <td> ..+=.. Add then Assign</td>
-                  <td> ..&&.. AND </td>
-                  <td> ..==.. Equality with coercion </td>
+                  <td><code class="language-bash"> - Subtraction </code></td>
+                  <td><code class="language-bash"> += Add then Assign </code></td>
+                  <td><code class="language-bash"> && AND </code></td>
+                  <td><code class="language-bash"> == Equality with coercion </code></td>
                 </tr>
                 <tr>
-                  <td>..*.. Multiply</td>
-                  <td> -=.. Subtract then Assign</td>
+                  <td><code class="language-bash"> *</code> Multiply</td>
+                  <td> <code class="language-bash">-=</code> Subtract then Assign</td>
                 </tr>
                 <tr>
-                  <td>../.. Divide</td>
-                  <td> *=.. Multiply then Assign</td>
+                  <td> <code class="language-bash">/</code> Divide</td>
+                  <td> <code class="language-bash">*=</code> Multiply then Assign</td>
                 </tr>
                 <tr>
-                  <td>..%.. remainder</td>
+                  <td> <code class="language-bash">%</code> remainder</td>
                 </tr>
                 <tr>
-                  <td>..**.. Exponential</td>
+                  <td> <code class="language-bash">**</code> Exponential</td>
                 </tr>
               </tbody>
             </table>
@@ -364,22 +362,22 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>+.. Convert to a number</td>
-                  <td> ..>=.. Greater than equal to </td>
-                  <td> ..++ Postfix increment <br /> ..-- Postfix decrement</td>
+                  <td> <code class="language-bash">+</code> Convert to a number</td>
+                  <td> <code class="language-bash">>= </code> Greater than equal to </td>
+                  <td> <code class="language-bash">++</code> Postfix increment <br /> <code class="language-bash">--</code> Postfix decrement</td>
                 </tr>
                 <tr>
-                  <td>-.. Convert to number then negate it</td>
+                  <td> <code class="language-bash">-</code> Convert to number then negate it</td>
                   <td>
-                    .. <=.. Greater than equal to </td>
-                  <td> ++.. Prefix increment <br /> --.. Prefix decrement</td>
+                    <code class="language-bash"><=</code> Greater than equal to </td>
+                  <td> <code class="language-bash">++</code> Prefix increment <br /> <code class="language-bash">--</code> Prefix decrement</td>
                 </tr>
                 <tr>
-                  <td>!.. Convert to boolean then inverse it</td>
-                  <td>.. != .. Not equal after coercion </td>
+                  <td><code class="language-bash">!</code> Convert to boolean then inverse it</td>
+                  <td><code class="language-bash">!=</code> Not equal after coercion </td>
                 </tr>
                 <tr>
-                  <td>.. !== .. Not equal </td>
+                  <td><code class="language-bash">!==</code> Not equal </td>
                 </tr>
               </tbody>
             </table>
@@ -391,40 +389,40 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>typeof</td>
+                  <td><code class="language-bash">typeof</code></td>
                   <td>Returns the type of a variable (e.g., typeof "hello" → "string")</td>
                 </tr>
                 <tr>
-                  <td>instanceof</td>
+                  <td><code class="language-bash">instanceof</code></td>
                   <td>Checks if an object is an instance of a constructor (e.g., x instanceof Array)</td>
                 </tr>
                 <tr>
-                  <td>()</td>
+                  <td><code class="language-bash">()</code></td>
                   <td>Grouping operator or used to invoke functions (e.g., sum())</td>
                 </tr>
                 <tr>
-                  <td>... (spread)</td>
+                  <td><code class="language-bash">... (spread)</code></td>
                   <td>Spread (or rest) operator: spreads elements or collects rest args (e.g., [...arr],
                     function(...args))</td>
                 </tr>
                 <tr>
-                  <td>.</td>
+                  <td><code class="language-bash">.</code></td>
                   <td>Property access (e.g., obj.name)</td>
                 </tr>
                 <tr>
-                  <td>[]</td>
+                  <td><code class="language-bash">[ ]</code></td>
                   <td>Bracket notation for property access (e.g., obj["name"])</td>
                 </tr>
                 <tr>
-                  <td>new</td>
+                  <td><code class="language-bash">new</code></td>
                   <td>Creates an instance of an object (e.g., new Date())</td>
                 </tr>
                 <tr>
-                  <td>delete</td>
+                  <td><code class="language-bash">delete</code></td>
                   <td>Deletes a property from an object (e.g., delete obj.key)</td>
                 </tr>
                 <tr>
-                  <td>?.. : .. (ternary)</td>
+                  <td><code class="language-bash">?.. : ..</code> (ternary)</td>
                   <td>Ternary conditional operator (e.g., condition ? value1 : value2)</td>
                 </tr>
               </tbody>

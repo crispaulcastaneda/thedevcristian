@@ -1,7 +1,7 @@
 <?php
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
 $host = $_SERVER['HTTP_HOST'];
-$folder = '/thedevcristian/'; // Leave blank if you're in root domain
+$folder = '/thedevcristian'; // Leave blank for root directory or PROD
 
 // If your site is in a subfolder (e.g. https://domain.com/thedevcristian), set $folder = '/thedevcristian';
 $base_url = $protocol . '://' . $host . $folder . '/';
@@ -43,6 +43,7 @@ $base_url = $protocol . '://' . $host . $folder . '/';
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="<?=$base_url ?>assets/css/normalize.css">
   <link rel="stylesheet" href="<?=$base_url ?>assets/css/misc.css">
   <link rel="stylesheet" href="<?=$base_url ?>assets/css/blog-style.css">

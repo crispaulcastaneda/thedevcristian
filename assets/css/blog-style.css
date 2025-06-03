@@ -7,6 +7,17 @@
 
 @charset "UTF-8";
 
+pre {
+  border-radius: 4px;
+  overflow-x: auto;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+code.language-bash {
+  font-size: 12px!important;;
+}
+
 .tdc--landing-page__section {
   margin-bottom: 32px;
 }
@@ -18,6 +29,7 @@
 .tdc--toggle__container {
   margin-bottom: 48px;
 }
+
 
 .tdc--toggle__content h3 {
   margin-bottom: 32px;
@@ -39,6 +51,14 @@
 
 .code--container pre {
   font-size: 12px;
+}
+
+.tdc--git__box {
+  margin-bottom: 32px;
+}
+
+.tdc--git__box h4 {
+  margin-bottom: 14px;
 }
 
 /* MARKUP */
