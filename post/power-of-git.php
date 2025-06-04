@@ -171,7 +171,8 @@
                     <span>1. Use <code>.gitignore</code> to avoid committing unwanted files. </span> <br/>
                     <span>2. Make Atomic Commits: One logical change per commit. </span> <br/>
                     <span>3. Pull before pushing to avoid conflicts. </span> <br/>
-                    <span>4. Resolve conflicts carefully, then <code class="language-bash">git add</code> and <code class="language-bash">git commit</code> </span> <br/>
+                    <span>4. Resolve conflicts carefully, then <code class="language-bash">git add</code> and <code class="language-bash">git commit</code> </span> <br/><br/>
+                    <span> If ever I wanted to practice and check my git expertise. <br/> I play this <a href=https://learngitbranching.js.org/">git website</a> as my refresher </span>
                 </div>
 
             </div>
