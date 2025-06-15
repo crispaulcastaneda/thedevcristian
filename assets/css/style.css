@@ -7,7 +7,7 @@
 
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
 /* CSS Document */
 /* Global Styles */
 :root {
@@ -45,7 +45,7 @@ html {
 
 body {
   background-color: var(--base-black);
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--text-color);
 }
 
@@ -64,7 +64,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   color: var(--text-color);
   margin: 0;
@@ -84,7 +84,7 @@ li {
 }
 
 li::before {
-  content: "•";
+  content: '•';
   color: var(--text-color);
   font-weight: 700;
   display: inline-block;
@@ -125,7 +125,7 @@ body.fade--out {
 
 .tdc--header__container .tdc--hovered__txt::after,
 .tdc--header__container .tdc--hovered__txt::before {
-  content: "Cristian Paul Castañeda";
+  content: 'Cristian Paul Castañeda';
   position: absolute;
   width: 100%;
   font-weight: 500;
@@ -144,7 +144,7 @@ body.fade--out {
 }
 
 .tdc--header__container .tdc--hovered__txt::before {
-  content: "thedevcristian";
+  content: 'thedevcristian';
   top: 40px;
   color: var(--hover-color);
 }

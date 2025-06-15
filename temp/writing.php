@@ -4,6 +4,7 @@
       <h3>Write up</h3>
 
       <ul>
+        <li><a href="<?=$base_url ?>post/css-position.php" class="tdc--transition__link">CSS Position</a></li>
         <li><a href="<?=$base_url ?>post/js-basics.php" class="tdc--transition__link">JS Basics</a></li>
         <li><a href="<?=$base_url ?>post/power-of-git.php" class="tdc--transition__link">Power Of Git</a></li>
       </ul>

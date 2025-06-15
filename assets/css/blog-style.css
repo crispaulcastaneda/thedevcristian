@@ -11,11 +11,90 @@ pre {
   border-radius: 4px;
   overflow-x: auto;
   -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-code.language-bash {
-  font-size: 12px!important;;
+.tdc--csspos__content {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.fixed--content {
+  height: 50vh;
+  position: relative;
+}
+
+.tdc--csspos__content h4 {
+  margin-bottom: 12px;
+}
+
+.tdc--csspos__content p.mx--blend {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: difference;
+}
+
+.css--box__descriptive {
+  position: relative;
+}
+
+.box--content {
+  width: 200px;
+  height: 200px;
+  background-color: var(--text-color);
+  border-radius: 8px;
+}
+
+.box--relative {
+  position: relative;
+  top: -50px;
+  left: 150px;
+}
+
+.box--absolute {
+  position: absolute;
+  top: -140px;
+  right: 0;
+  z-index: -1;
+}
+
+.box--sticky {
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+.box--fixed {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  left: 50px;
+  z-index: -1;
+}
+
+.box--fixed p {
+  color: #111;
+  padding: 4px;
+  text-align: center;
+  font-size: 8px;
+}
+
+.code--emphasis {
+  margin-bottom: 24px;
+}
+
+code.language-bash,
+code.language-css {
+  font-size: 12px !important;
+}
+.tdc--csspos__opt {
+  margin-bottom: 64px;
+}
+
+.tdc--csspos__content,
+.tdc--csspos__box hr {
+  margin-bottom: 24px;
 }
 
 .tdc--landing-page__section {
@@ -29,7 +108,6 @@ code.language-bash {
 .tdc--toggle__container {
   margin-bottom: 48px;
 }
-
 
 .tdc--toggle__content h3 {
   margin-bottom: 32px;
