@@ -164,6 +164,8 @@
                 </code><br/>
               </div>
 
+              <p> The fixed box is floating top left area. Below is extra space for scroll to test the positioning. </p>
+
             </div>
 
           </div>
