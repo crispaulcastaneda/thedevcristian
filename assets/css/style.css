@@ -222,6 +222,13 @@ body.fade--out {
   color: var(--text-color-accent);
 }
 
+.tdc--extensions__box .extension--box {
+  margin-bottom: 24px;
+}
+.tdc--extensions__box .extension--box h4 {
+  margin-bottom: 12px;
+}
+
 /* WRITING */
 .tdc--writing__section {
   margin-bottom: 32px;
