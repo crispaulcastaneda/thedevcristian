@@ -1,0 +1,11 @@
+{
+    "name": "project/thedevcristian",
+    "description": "Personal Portfolio",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cristian Paul Castaneda"
+        }
+    ],
+    "require": {}
+}

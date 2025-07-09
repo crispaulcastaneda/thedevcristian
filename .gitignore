@@ -16,3 +16,4 @@ npm-debug.log*
 coverage
 # Temporary files
 tmp
+/vendor/
