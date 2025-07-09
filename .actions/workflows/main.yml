@@ -1,0 +1,16 @@
+name: Build & Deploy thedevcristian
+
+on: push
+
+jobs:
+  super-lint:
+    name: Lint code base
+    runs-on: macos-15
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2.2
+
+      - name: Run Super-Linter
+        uses: github/super-linter@v3
+        env:
+          DEFAULT_BRANCH: master
